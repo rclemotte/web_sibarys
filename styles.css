@@ -109,8 +109,8 @@ p { margin: 0; }
 
 /* ---------- Cinta ---------- */
 .cinta-wrap {
-  background: var(--oro); color: var(--negro); padding: 18px 0; margin: 36px 0 0;
-  width: 100%; overflow: hidden;
+  background: var(--oro); color: var(--negro); padding: 18px 0; margin: 16px auto 0;
+  max-width: 1240px; overflow: hidden; border-radius: 28px;
 }
 .cinta {
   display: flex; gap: 36px; width: max-content; align-items: center; white-space: nowrap;
