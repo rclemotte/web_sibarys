@@ -85,15 +85,15 @@ p { margin: 0; }
 }
 
 /* ---------- Hero ---------- */
-.hero { padding-top: 64px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 40px; }
-.hero-top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px; }
+.hero { padding-top: 56px; padding-bottom: 0; display: flex; flex-direction: column; gap: 36px; }
+.hero-top { display: flex; flex-direction: column; gap: 32px; }
 .hero h1 {
   font-family: var(--display); font-weight: 700;
   font-size: clamp(46px, 8.4vw, 124px); line-height: 0.95; letter-spacing: -0.01em;
-  flex: 1 1 600px; min-width: 0;
+  min-width: 0;
 }
-.hero-texto { flex: 0 1 380px; display: flex; flex-direction: column; gap: 22px; padding-bottom: 12px; }
-.hero-texto p { font-size: 18px; line-height: 1.6; color: var(--texto-suave); }
+.hero-texto { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px 40px; }
+.hero-texto p { font-size: 19px; line-height: 1.6; color: var(--texto-suave); flex: 1 1 420px; max-width: 620px; }
 .acciones { display: flex; flex-wrap: wrap; gap: 10px; }
 .hero-foto { position: relative; border-radius: 36px; overflow: hidden; }
 .hero-foto img { width: 100%; height: clamp(320px, 46vw, 620px); object-fit: cover; }
@@ -109,11 +109,11 @@ p { margin: 0; }
 
 /* ---------- Cinta ---------- */
 .cinta-wrap {
-  background: var(--oro); color: var(--negro); padding: 22px 0; margin: 40px 0 0;
+  background: var(--oro); color: var(--negro); padding: 18px 0; margin: 36px 0 0;
   width: 100%; overflow: hidden;
 }
 .cinta {
-  display: flex; gap: 36px; font-style: italic; width: max-content; align-items: center; white-space: nowrap;
+  display: flex; gap: 36px; width: max-content; align-items: center; white-space: nowrap;
   font-family: var(--display); font-weight: 700; font-size: 30px;
   animation: cinta 28s linear infinite;
 }
